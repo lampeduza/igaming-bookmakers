@@ -1,0 +1,17 @@
+.cross-platform {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+
+	max-width: 148px;
+
+	padding: 16px;
+}
+
+.cross-platform__item {
+	margin: 0 16px 0 0;
+
+	&:nth-child(3n) {
+		margin: 0;
+	}
+}

@@ -1,0 +1,47 @@
+.games {
+	@include reset-list;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.games__item {
+	display: flex;
+
+	width: calc((100% - 64px) / 3);
+	margin: 0 32px 48px 0;
+
+	&:nth-child(3n) {
+		margin: 0 0 48px 0;
+	}
+}
+
+.games__picture {
+	flex-shrink: 0;
+	margin: 0 0 16px 0;
+}
+
+.games__image {
+	box-shadow: 0px 20px 40px -8px rgba(0, 0, 0, 0.5);
+	border-radius: $radius-sixteen;
+}
+
+.games__link {
+	color: inherit;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.games__title {
+	margin: 0 0 8px 0;
+
+	font-size: 16px;
+}
+
+.games__text {
+	font-size: 14px;
+	line-height: 20px;
+	color: $primary-color;
+	margin: 0;
+}

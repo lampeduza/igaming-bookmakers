@@ -1,0 +1,32 @@
+/* Inter regular (normal)*/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  //font-display: optional;
+  src: url("../fonts/inter/inter-regular.woff2") format("woff2"),
+    url("../fonts/inter/inter-regular.woff") format("woff");
+}
+
+/* Inter bold (normal)*/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  //font-display: optional;
+  src: url("../fonts/inter/inter-bold.woff2") format("woff2"),
+    url("../fonts/inter/inter-bold.woff") format("woff");
+}
+
+/* Rubik light (normal)*/
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  //font-display: optional;
+  src: url("../fonts/rubik/rubik-light.woff2") format("woff2"),
+    url("../fonts/rubik/rubik-light.woff") format("woff");
+}

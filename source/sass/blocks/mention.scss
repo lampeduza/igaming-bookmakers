@@ -1,0 +1,71 @@
+.mention {
+	.bookmaker-review__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 16px 0;
+	}
+
+	.bookmaker-review__item {
+		background-color: $white-color;
+		width: 660px;
+		margin: 0 24px 24px 0;
+
+		&:nth-child(2n) {
+			margin: 0 0 24px 0;
+		}
+	}
+
+	.bookmaker-review__content {
+		width: 540px;
+	}
+
+	.bookmaker-review__picture {
+		flex-shrink: 0;
+	}
+
+	.bookmaker-review__link {
+		margin: 0 0 0 16px;
+		cursor: pointer;
+	}
+
+	.pagination {
+		margin: 0 0 64px 0;
+	}
+
+	.pagination__select {
+		margin: 0 194px 0 0;
+	}
+
+	.pagination__select-option[rel="12"] {
+    display: none;
+	}
+}
+
+.mention__top {
+	display: flex;
+	align-items: flex-start;
+	margin: 0 0 24px 0;
+
+	.filters__group {
+		width: 280px;
+		border: none;
+		margin: 0;
+	}
+
+	.filters__element {
+		margin: 0;
+	}
+}
+
+.mention__title {
+	margin: 0 auto 0 0;
+	font-size: 28px;
+	line-height: 32px;
+	width: max-content;
+}
+
+.mention__button {
+	margin: 0 0 0 24px;
+	width: 159px;
+	display: block;
+}

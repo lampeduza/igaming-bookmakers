@@ -1,0 +1,140 @@
+.pagination {
+	display: flex;
+	align-items: center;
+
+	margin: 0 auto;
+}
+
+.pagination__select {
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+	margin: 0 22px 0 0;
+	width: 260px;
+	height: 44px;
+
+	position: relative;
+
+	&:hover {
+		.pagination__select-styled {
+			border: 1px solid transparent;
+			border-radius: 0;
+			border-top-left-radius: $radius-eight;
+			border-top-right-radius: $radius-eight;
+		}
+
+		.pagination__select-options {
+			display: block;
+		}
+	}
+}
+
+.pagination__dropdown {
+	padding: 12px 46px 12px 20px;
+	width: 260px;
+}
+
+.pagination__select-styled {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	padding: 12px 46px 12px 20px;
+	width: 260px;
+
+	background-color: $white-color;
+	border: 1px solid #d8d8d8;
+	border-radius: $radius-eight;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 13px;
+		right: 20px;
+		background-image: url('../img/icons/arrow-select-down.svg');
+		width: 16px;
+		height: 16px;
+		background-size: 16px, 16px;
+		background-repeat: no-repeat;
+	}
+}
+
+.pagination__select-options {
+	@include reset-list;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	background-color: $white-color;
+	z-index: 10;
+	// border: 1px solid #d8d8d8;
+	// border-top: none;
+	// border-bottom-left-radius: $radius-eight;
+	// border-bottom-right-radius: $radius-eight;
+
+	display: none;
+}
+
+.pagination__select-option {
+	text-indent: 20px;
+	padding: 12px 0;
+	z-index: 100;
+
+	&[rel="15"] {
+		display: none;
+	}
+}
+
+.pagination__list {
+	@include reset-list;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pagination__item {
+	margin: 0 12px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&--active {
+		.pagination__link {
+			background-color: #1a233f;
+			color: $white-color;
+		}
+	}
+}
+
+.pagination__link {
+	color: inherit;
+	border-radius: $radius-eight;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 48px;
+	height: 48px;
+	padding: 5px 8px;
+	vertical-align: middle;
+}
+
+.pagination__icon {
+	&--transform {
+		transform: rotate(-180deg);
+	}
+}
+
+.pagination__total {
+	color: $black-color;
+
+	margin: 0 0 0 auto;
+}

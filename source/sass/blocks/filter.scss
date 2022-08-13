@@ -1,0 +1,64 @@
+.filter {
+	margin: 0 0 44px 0;
+
+	&--global {
+		margin: 0 0 48px 0;
+
+		.filter__item {
+			width: calc((100% - 48px) / 3);
+			margin: 0 24px 24px 0;
+
+			&:nth-child(3n) {
+				margin: 0 0 24px 0;
+			}
+		}
+
+		.filter__icon {
+			margin: 0 16px 0 0;
+		}
+	}
+}
+
+.filter__list {
+	@include reset-list;
+	display: flex;
+	justify-content: normal;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.filter__item {
+	width: calc((100% - 64px) / 3);
+	margin: 0 32px 20px 0;
+
+	&:nth-child(3n) {
+		margin: 0 0 20px 0;
+	}
+}
+
+.filter__button {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $white-color;
+
+	border: none;
+	border-radius: $radius-sixteen;
+
+	padding: 16px 10px;
+
+	font-size: inherit;
+	line-height: inherit;
+
+	&:hover {
+		box-shadow: 0px 8px 24px -4px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+	}
+}
+
+.filter__icon {
+	margin-right: 20px;
+	flex-shrink: 0;
+}

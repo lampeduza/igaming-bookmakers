@@ -1,0 +1,15 @@
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.copyright__text {
+	font-family: $secondary-font;
+	color: $secondary-color;
+	font-size: 12px;
+	line-height: 19.94px;
+	font-weight: $light;
+	margin: 0;
+}

@@ -1,0 +1,47 @@
+.activity__title {
+	color: #878b90;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 8px 0;
+}
+
+.activity__list {
+	@include reset-list;
+
+	display: flex;
+}
+
+.activity__list-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 351px;
+	margin: 0 32px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.activity__list-image {
+	border-radius: $radius-eight;
+}
+
+.activity__list-continue {
+	width: 221px;
+}
+
+.activity__list-continue-title {
+	margin: 0 0 8px 0;
+}
+
+.activity__list-continue-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.activity__list-continue-icon {
+	margin: 0 8px 0 0;
+}

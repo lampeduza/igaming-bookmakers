@@ -1,0 +1,24 @@
+.button {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+
+	background-color: $light-blue-color;
+	color: $white-color;
+
+	padding: 12px 5px;
+
+	min-width: 90px;
+
+	border: none;
+	border-radius: $radius-eight;
+
+	cursor: pointer;
+
+	&--enter {
+		color: $primary-color;
+		background-color: transparent;
+		border: 1px solid $primary-color;
+		padding: 11px 5px;
+	}
+}

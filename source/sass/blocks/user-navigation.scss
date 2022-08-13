@@ -1,0 +1,15 @@
+.user-navigation {
+	display: flex;
+	align-items: center;
+
+	cursor: pointer;
+	margin: 0 0 0 40px;
+}
+
+.user-navigation__profile {
+	margin-right: 40px;
+}
+
+.user-navigation__link {
+	margin: 0 40px 0 0;
+}

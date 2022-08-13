@@ -1,0 +1,131 @@
+.feedback {
+	width: 336px;
+
+	position: fixed;
+	bottom: 0;
+	right: 84px;
+}
+
+.feedback__recieve {
+	width: 100%;
+	background-color: #1a233f;
+	color: $white-color;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 17px 90px 17px 18px;
+	border: 1px solid transparent;
+	border-top-left-radius: $radius-sixteen;
+	border-top-right-radius: $radius-sixteen;
+	cursor: pointer;
+
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 24px;
+		height: 24px;
+		background-image: url('../img/icons/chat-open-icon.svg');
+		background-size: 24px, 24px;
+		background-repeat: no-repeat;
+
+		position: absolute;
+		top: 18px;
+		right: 18px;
+	}
+}
+
+.feedback__area {
+	background-color: $white-color;
+	border: 1px solid #d8d8d8;
+
+	&--closed {
+		display: none;
+	}
+
+	&--opened {
+		display: flex;
+	}
+}
+
+.feedback__area-list {
+	@include reset-list;
+
+	// Временно
+	padding: 258px 18px 18px 18px;
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback__area-item {
+	width: 286px;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 16px 0;
+	padding: 7px 11px;
+	border: 1px solid transparent;
+	border-radius: $radius-eighteen;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&--support {
+		background-color: $light-blue-color;
+		color: $white-color;
+	}
+
+	&--user {
+		border: 1px solid #1a233f;
+		align-self: flex-end;
+		background-color: transparent;
+	}
+}
+
+.feedback__area-message-container {
+	width: 336px;
+	min-height: 56px;
+	position: relative;
+}
+
+.feedback__area-message {
+	display: block;
+	height: 56px;
+	min-height: 56px;
+	max-height: 100px;
+
+	word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: text;
+
+	padding: 18px 50px 18px 18px;
+	width: 100%;
+	font-family: "Inter", "Arial", "sans-serif";
+  font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+
+	resize: vertical;
+
+	&::-webkit-resizer {
+  	display: none;
+  }
+}
+
+.feedback__area-send {
+	display: flex;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+}

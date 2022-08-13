@@ -1,0 +1,153 @@
+.bookmaker-review {
+	padding: 32px;
+	background-color: $white-color;
+	border-radius: $radius-sixteen;
+
+	position: relative;
+}
+
+.bookmaker-review__title {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 0 24px 0;
+}
+
+.bookmaker-review__show {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	padding: 0;
+
+	cursor: pointer;
+}
+
+.bookmaker-review__list {
+	@include reset-list;
+}
+
+.bookmaker-review__item {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+	margin: 0 0 24px 0;
+	background-color: #f6f5f4;
+	border-radius: $radius-sixteen;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.bookmaker-review__content {
+	max-width: 728px;
+}
+
+.bookmaker-review__row {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 8px 0;
+}
+
+.bookmaker-review__user-name {
+	margin: 0;
+	font-weight: $bold;
+}
+
+.bookmaker-review__user-name-link {
+	color: inherit;
+}
+
+.bookmaker-review__text {
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.bookmaker-review__rating {
+	display: flex;
+	align-items: center;
+}
+
+.bookmaker-review__mark {
+	display: flex;
+	align-items: center;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: $bold;
+	color: #fed200;
+	margin: 0;
+}
+
+.bookmaker-review__icon {
+	margin: 0 4px 0 0;
+}
+
+.bookmaker-review__counter {
+	font-weight: $bold;
+	color: $primary-color;
+	display: flex;
+	align-items: center;
+}
+
+.bookmaker-review__date {
+	color: #878b90;
+	margin: 0 0 0 16px;
+}
+
+.bookmaker-review__match-title {
+	text-align: center;
+	margin: 0 0 24px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+	font-weight: $regular;
+
+	width: 100%;
+}
+
+.bookmaker-review__battle-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 0 16px 0;
+}
+
+.bookmaker-review__battle {
+	min-width: 537px;
+	display: flex;
+	align-items: center;
+		justify-content: space-between;
+}
+
+.bookmaker-review__battle-team {
+	display: flex;
+	align-items: center;
+	max-width: 230px;
+}
+
+.bookmaker-review__schedule {
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+	min-width: 123px;
+	max-width: 150px;
+	text-align: center;
+	margin: 0 10px;
+}
+
+.bookmaker-review__match-date {
+	display: block;
+	margin: 0 0 8px 0;
+}
+
+.bookmaker-review__date-text {
+	margin: 0;
+}

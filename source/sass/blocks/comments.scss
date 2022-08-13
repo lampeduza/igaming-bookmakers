@@ -1,0 +1,38 @@
+.comments {
+	padding: 24px;
+	background-color: $white-color;
+	border-radius: $radius-twelve;
+
+	.bookmaker-review__content {
+		max-width: 660px;
+	}
+
+	.bookmaker-review__text {
+		color: $secondary-color;
+	}
+
+	.bookmaker-review__drawed {
+		color: #878b90;
+	}
+}
+
+.comments__title {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 0 24px 0;
+}
+
+.comments__list {
+	@include reset-list;
+}
+
+.comments__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f6f5f4;
+	border-radius: $radius-sixteen;
+
+	padding: 16px;
+	margin: 0 0 24px 0;
+}

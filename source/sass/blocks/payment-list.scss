@@ -1,0 +1,31 @@
+.payment-list {
+	@include reset-list;
+	display: flex;
+	align-items: center;
+}
+
+.payment-list__item {
+	display: flex;
+	align-items: center;
+
+	margin: 0 24px 8px 0;
+
+	&:last-child {
+		margin: 0 0 8px 0;
+	}
+
+	&--circle {
+		background-color: #d8d8d8;
+		padding: 6px 8px;
+		border-radius: $radius-sixteen;
+	}
+}
+
+.payment-list__more {
+	font-size: 14px;
+	line-height: 20px;
+	color: #243c4e;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}

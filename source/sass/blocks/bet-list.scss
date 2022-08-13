@@ -1,0 +1,42 @@
+.bet-list {
+	@include reset-list;
+	display: flex;
+}
+
+.bet-list__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0 24px 32px 0;
+	padding: 16px;
+	border-radius: $radius-sixteen;
+	background-color: #f6f5f4;
+	width: 194px;
+
+	&:last-child {
+		margin: 0 0 32px 0;
+	}
+}
+
+.bet-list__title {
+	font-size: 14px;
+	line-height: 20px;
+	color: #878b90;
+	font-weight: $bold;
+
+	margin: 0 0 8px 0;
+}
+
+.bet-list__amount {
+	display: block;	
+}
+
+.bet-list__info {
+	font-size: 12px;
+	line-height: 16px;
+	color: #878b90;
+
+	margin: 0;
+}

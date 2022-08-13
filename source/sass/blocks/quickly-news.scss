@@ -1,0 +1,33 @@
+.quickly-news {
+	max-width: 1000px;
+	margin: 0 0 64px 0;
+
+	.match__content-figure {
+		width: 1000px;
+
+		&:nth-of-type(1) {
+			margin: 0 0 24px 0;
+		}
+	}
+
+	.match__content-figure-picture {
+		border-radius: $radius-eight;
+	}
+}
+
+.quickly-news__title {
+	margin: 0 0 24px 0;
+}
+
+.quickly-news__subtitle {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 24px 0;
+}
+
+.quickly-news__text {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 24px 0;
+}
+

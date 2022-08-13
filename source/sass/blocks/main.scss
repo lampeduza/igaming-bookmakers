@@ -1,0 +1,133 @@
+.main {
+	position: relative;
+
+	&--prediction {
+		.mention__top {
+			align-items: center;
+			margin: 0 0 6px 0;
+		}
+
+		.hot-news__sort-list {
+			margin: 0 0 24px 0;
+		}
+
+		.mention {
+			.bookmaker-review__content {
+    		width: 537px;
+			}
+
+			.bookmaker-review__text {
+				-webkit-line-clamp: 3;
+			}
+
+			.pagination__select-option {
+
+				&[rel="10"] {
+					display: none;
+				}
+			}
+		}
+
+		.bookmaker-review__item {
+			flex-wrap: wrap;
+		}
+
+		.bookmaker-review__battle-team {
+			&:first-child {
+				.bookmaker-review__team-title {
+					margin: 0 16px 0 0;
+				}
+			}
+
+			&:last-child {
+				.bookmaker-review__team-title {
+					margin: 0 0 0 16px;
+				}
+			}
+		}
+	}
+}
+
+.main__title {
+	margin: 0;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.main__index-columns {
+	display: flex;
+	align-items: flex-start;
+
+	&:nth-of-type(1) {
+		margin: 0 auto 32px auto;
+	}
+
+	&:nth-of-type(2) {
+		align-items: flex-start;
+		justify-content: space-between;
+
+		width: 100%;
+
+		margin: 0 auto 64px auto;
+	}
+
+	&:nth-of-type(3) {
+		justify-content: space-between;
+		align-items: stretch;
+		margin: 0 auto 64px auto;
+	}
+}
+
+.main__filters {
+	z-index: 10;
+	min-width: 1512px;
+	background-color: #f6f5f4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: auto;
+
+	display: none;
+
+	&--show {
+		display: flex;
+	}
+}
+
+.main__left-side {
+	width: 1000px;
+}
+
+.main__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 40px auto;
+
+	&--broadcasts {
+		display: block;
+		margin: 0 auto 24px auto;
+
+		.breadcrumbs {
+			margin: 0 0 40px 0;
+		}
+	}
+
+	&--friendly {
+		display: block;
+    margin: 0 auto 24px auto;
+	}
+}
+
+.main__edit-profile {
+	display: flex;
+	align-items: center;
+	
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+}
+
+.main__edit-profile-icon {
+	margin: 0 12px 0 0;
+}

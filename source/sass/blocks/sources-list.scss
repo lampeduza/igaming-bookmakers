@@ -1,0 +1,54 @@
+.sources-list {
+	@include reset-list;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sources-list__item {
+	width: calc(50% - 8px);
+	margin: 0 16px 16px 0;
+
+	&:nth-child(2n) {
+		margin: 0 0 16px 0;
+	}
+
+	&:last-child {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.sources-list__link {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: $white-color;
+	color: #f6f5f4;
+	font-weight: $bold;
+
+	&--vk {
+		background-color: #0077ff;
+	}
+
+	&--google {
+		background-color: $white-color;
+		color: $primary-color;
+	}
+
+	&--facebook {
+		background-color: #1877f2;
+	}
+
+	&--twitter {
+		background-color: #1da1f2;
+	}
+
+	&--apple-id {
+		background-color: $black-color;
+	}
+}
+
+.sources-list__logo {
+	margin: 0 8px 0 0;
+}

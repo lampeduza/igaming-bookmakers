@@ -1,0 +1,218 @@
+.profile__header {
+	display: flex;
+	margin: 0 0 64px 0;
+}
+
+.profile__header-picture {
+	flex-shrink: 0;
+	margin: 0 32px 0 0;
+}
+
+.profile__header-title {
+	margin: 0 0 12px 0;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.profile__header-email {
+	color: inherit;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.profile__header-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile__header-top {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	margin: 0 0 32px 0;
+}
+
+.profile__header-data {
+	width: 489px;
+}
+
+.profile__header-connect {
+	width: 283px;
+	margin: 0 0 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.profile__header-link-account {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 16px 0 0;
+}
+
+.profile__header-about {
+	display: flex;
+	justify-content: space-between;
+	background-color: $white-color;
+	border-radius: $radius-sixteen;
+	padding: 32px;
+	width: 100%;
+}
+
+.profile__header-mark {
+	margin: 0 0 12px 0;
+}
+
+.profile__header-rating {
+	align-items: center;
+	width: 186px;
+
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 1px;
+		height: 100%;
+
+		position: absolute;
+		right: -32px;
+		top: 0;
+		background-color: #d8d8d8;
+	}
+}
+
+.profile__header-rating-text {
+	font-weight: $regular;
+	font-size: 14px;
+	line-height: 20px;
+	color: #243c4e;
+	margin: 0 0 8px 0;
+}
+
+.profile__header-how-link {
+	font-weight: $regular;
+}
+
+.profile__header-image {
+	border-radius: 16px;
+}
+
+.profile__main-list,
+.profile__main-button-list,
+.profile__main-item-list {
+	 @include reset-list;
+}
+
+.profile__main-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile__main-button-list {
+	display: flex;
+	margin: 0 0 24px 0;
+}
+
+.profile__main-group-buttons {
+	margin: 0 32px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.profile__main-group-button {
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+
+	&--active {
+		font-weight: $bold;
+		color: $primary-color;
+	}
+}
+
+.profile__main-item {
+	width: 656px;
+	margin: 0 32px 32px 0;
+
+	&:nth-child(2n) {
+		margin: 0 0 32px 0;
+	}
+}
+
+.profile__main-navigation-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 0 12px 0;
+}
+
+.profile__main-navigation-title {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0;
+}
+
+.profile__review-item {
+	display: flex;
+
+	margin: 0 0 16px 0;
+	padding: 16px;
+	background-color: $white-color;
+	border-radius: $radius-sixteen;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.profile__review-link {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.profile__review-picture {
+	flex-shrink: 0;
+	margin: 0 16px 0 0;
+}
+
+.profile__review-information {
+	width: 412.8px;
+}
+
+.profile__review-title {
+	font-size: 16px;
+	line-height: 24px;
+	color: $primary-color;
+	margin: 0 0 4px 0;
+}
+
+.profile__review-text {
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: $primary-color;
+
+	display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.profile__review-rating {
+	width: 85px;
+	margin: 0 0 0 auto;
+
+	&::after {
+		right: auto;
+		left: -16px;
+	}
+}
+
+.profile__review-mark {
+	margin: 0;
+}

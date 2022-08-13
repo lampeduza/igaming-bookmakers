@@ -1,0 +1,347 @@
+.friendly__title {
+	margin: 0 0 40px 0;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.friendly__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.friendly__left {
+	width: 828px;
+
+	.bookmaker-review__battle-wrapper {
+		justify-content: center;
+		flex-wrap: wrap;
+		background-color: $white-color;
+		padding: 64px 0;
+		margin: 0 0 32px 0;
+		border-radius: $radius-sixteen;
+	}
+
+	.bookmaker-review__battle {
+		min-width: 654px;
+		max-width: 828px;
+	}
+
+	.bookmaker-review__title {
+		margin: 0 0 40px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.bookmaker-review__schedule {
+		max-width: 180px;
+	}
+
+	.bookmaker-review__battle-team {
+		min-width: 100px;
+		max-width: 350px;
+		justify-content: space-between;
+
+		&:first-child {
+			.bookmaker-review__team-title {
+				margin: 0 16px 0 0;
+			}
+		}
+
+		&:last-child {
+			.bookmaker-review__team-title {
+				margin: 0 0 0 16px;
+			}
+		}
+	}
+
+	.bookmaker-review__team-title {
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	.bookmaker-review__picture {
+		flex-shrink: 0;
+	}
+
+	.modal__label {
+		color: #1A233F;
+	}
+
+	.modal__area {
+		color: #1e1e1e;
+		margin: 0 0 16px 0;
+
+		&::placeholder {
+			color: #1e1e1e;
+		}
+	}
+
+	.buttons-list {
+		margin: 0;
+	}
+
+	.buttons-list__item {
+		width: auto;
+		margin: 0 0 0 auto;
+	}
+
+	.buttons-list__leave {
+		padding: 12px 24px;
+		color: #f6f5f4;
+	}
+}
+
+.friendly__left-text {
+	padding: 16px;
+	margin: 0 0 32px 0;
+	background-color: $white-color;
+	border-radius: $radius-sixteen;
+	color: $secondary-color;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.friendly__right {
+	width: 484px;
+}
+
+.friendly__user {
+	background-color: $white-color;
+	border-radius: $radius-sixteen;
+	padding: 16px 16px 0 16px;
+	margin: 0 0 32px 0;
+}
+
+.friendly__user-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.friendly__user-first-link {
+	margin: 0 0 4px 0;
+	display: block;
+	color: inherit;
+}
+
+.friendly__user-first {
+	font-size: 28px;
+	line-height: 32px;
+	margin: 0;
+}
+
+.friendly__user-content {
+	width: 364px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 0 0 16px;
+
+	.bookmaker-review__link {
+		display: inline-block;
+	}
+
+	.bookmaker-review__date {
+		margin: 0 0 0 auto;
+	}
+}
+
+.friendly__user-rating {
+	display: flex;
+	align-items: center;
+	margin: 0 46px 0 0;
+}
+
+.friendly__user-text {
+	color: #fed200;
+	font-weight: $bold;
+	margin: 0;
+}
+
+.friendly__user-list {
+	@include reset-list;
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 16px 0 0 0;
+}
+
+.friendly__user-item {
+	text-align: center;
+	margin: 0 12px 12px 0;
+	width: calc(100% / 3 - 8px);
+	background-color: #f6f5f4;
+	border-radius: $radius-sixteen;
+
+	&:nth-child(3n) {
+		margin: 0 0 12px 0;
+	}
+}
+
+.friendly__user-link {
+	display: block;
+	padding: 8px;
+}
+
+.friendly__user-caption {
+	margin: 0;
+	color: $secondary-color;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.friendly__user-counter {
+	font-weight: $bold;
+	color: $primary-color;
+
+	&--money {
+		color: #45ad5a;
+	}
+}
+
+.friendly__user-coefficient {
+	background-color: $white-color;
+	border-radius: $radius-sixteen;
+	padding: 16px;
+	margin: 0 0 32px 0;
+}
+
+.friendly__user-coefficient-list {
+	@include reset-list;
+
+	display: flex;
+	margin: 0 0 16px 0;
+}
+
+.friendly__user-coefficient-item {
+	margin: 0 16px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.friendly__user-describe-list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.friendly__user-describe-term {
+	font-weight: $bold;
+
+	&--prognosis {
+		color: $secondary-color;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.friendly__user-describe-value {
+	margin: 0 0 0 16px;
+	padding: 4px 8px;
+	font-weight: $bold;
+	background-color: rgba(69, 173, 90, 0.2);
+}
+
+.friendly__user-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.friendly__user-bottom-list {
+	@include reset-list;
+
+	display: flex;
+	align-items: center;
+}
+
+.friendly__user-bottom-item {
+	&:first-child {
+		.friendly__user-bottom-value {
+			background-color: #1a233f;
+			color: #f6f5f4;
+			border-radius: $radius-eight 0px 0px $radius-eight;
+			text-transform: uppercase;
+		}
+	}
+
+	&:last-child {
+		.friendly__user-bottom-value {
+			color: #1a233f;
+			border-radius: 0 $radius-eight $radius-eight 0;
+			border: 1px solid #1a233f;
+		}
+	}
+}
+
+.friendly__user-bottom-value {
+	font-size: 12px;
+	line-height: 16px;
+	padding: 7px 12px;
+	font-weight: $bold;
+	border: 1px solid transparent;
+	display: block;
+}
+
+.friendly__user-bottom-link {
+	color: #f6f5f4;
+	padding: 12px 24px;
+}
+
+.friendly__quiz {
+	background-color: $white-color;
+	border-radius: $radius-twelve;
+	padding: 24px;
+	margin: 0 0 32px 0;
+}
+
+.friendly__quiz-title {
+	margin: 0 0 24px 0;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.friendly__quiz-list {
+	@include reset-list;
+}
+
+.friendly__quiz-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 24px 0;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&--yes {
+		.progress__bar {
+			width: 63.5px;
+			background-color: #45ad5a;
+		}
+	}
+
+	&--no {
+		.progress__bar {
+			width: 191.25px;
+			background-color: #ec3d0c;
+		}
+	}
+}
+
+.friendly__quiz-percent {
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: $bold;
+	margin: 0;
+}
+
+.friendly__quiz-button {
+	background-color: transparent;
+	border: 1px solid $primary-color;
+	color: $primary-color;
+	padding: 11px 5px;
+}

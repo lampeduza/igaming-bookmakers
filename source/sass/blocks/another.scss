@@ -1,0 +1,101 @@
+.another {
+	background-color: $white-color;
+	padding: 24px;
+	border-radius: $radius-twelve;
+}
+
+.another__row {
+	display: flex;
+	align-items: flex-start;
+	margin: 0 0 24px 0;
+}
+
+.another__title {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0;
+}
+
+.another__show {
+	font-size: 14px;
+	line-height: 20px;
+	min-width: 95px;
+	margin: 0 0 0 24px;
+}
+
+.another__list,
+.another__confrontation-list {
+	@include reset-list;
+}
+
+.another__item {
+	margin: 0 0 24px 0;
+
+	background-color: #f6f5f4;
+	border-radius: $radius-twelve;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.another__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 16px;
+}
+
+.another__content {
+	max-width: 141px;
+	margin: 0 4px 0 0;
+}
+
+.another__content-game {
+	margin: 0 0 8px 0;
+	color: $primary-color;
+	font-weight: $bold;
+}
+
+.another__content-date {
+	margin: 0;
+}
+
+.another__confrontation-item {
+	display: flex;
+	align-items: center;
+	max-width: 174px;
+	margin: 0 0 12px 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.another__confrontation-picture {
+	flex-shrink: 0;
+}
+
+.another__confrontation-image {
+	border-radius: $radius-eight;
+	display: block;
+}
+
+.another__confrontation-team {
+	font-size: 16px;
+	line-height: 24px;
+	color: $primary-color;
+	font-weight: $bold;
+	margin: 0 0 0 16px;
+}
+
+.another__coefficient {
+	font-size: 20px;
+	line-height: 28px;
+	color: $primary-color;
+	font-weight: $bold;
+	min-width: 61px;
+	max-width: 80px;
+	margin: 0 0 0 4px;
+}

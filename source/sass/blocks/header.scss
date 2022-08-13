@@ -1,0 +1,83 @@
+.header {
+	margin: 0 0 28px 0;
+
+	&--user {
+		.user-navigation {
+			margin: 0 0 0 auto;
+		}
+	}
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header__link {
+	margin: 0 64px 0 0;
+}
+
+.header__switcher {
+	display: flex;
+	width: 223px;
+	height: 44px;
+	position: relative;
+}
+
+.header__switcher-text {
+	cursor: pointer;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  transition: 0.2s;
+
+	padding: 11px 24px;
+	border: 1px solid $primary-color;
+	background-color: transparent;
+
+	&--on {
+		width: 126px;
+		left: 0;
+		border-top-left-radius: $radius-eight;
+		border-bottom-left-radius: $radius-eight;
+
+		/* Временно */
+		// transform: rotate(15deg) skewX(15deg);
+	}
+
+	&--off {
+		background-color: $light-blue-color;
+		color: #f6f5f4;
+		width: 97px;
+		right: 0;
+		border: 1px solid transparent;
+		border-top-right-radius: $radius-eight;
+		border-bottom-right-radius: $radius-eight;
+	}
+
+	// background-color: $light-blue-color;
+	// border: 1px solid transparent;
+}
+
+.header__switcher-input {
+	&:checked {
+		~ .header__switcher-text--on {
+			background-color: $light-blue-color;
+			border: 1px solid transparent;
+			color: #f6f5f4;
+		}
+
+		~ .header__switcher-text--off {
+			background-color: transparent;
+			border: 1px solid $primary-color;
+			color: $primary-color;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.code-list {
+	@include reset-list;
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 24px 0;
+}
+
+.code-list__item {
+	width: 61px;
+	margin: 0 10px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.code-list__digit {
+	border: 1px solid #d8d8d8;
+	border-radius: $radius-eight;
+	width: 61px;
+	display: block;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: $bold;
+	padding: 15px;
+	text-align: center;
+
+	&::placeholder {
+		color: $primary-color;
+	}
+}

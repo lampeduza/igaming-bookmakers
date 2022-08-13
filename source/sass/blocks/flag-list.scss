@@ -1,0 +1,28 @@
+.flag-list {
+	@include reset-list;
+	display: flex;
+	align-items: center;
+	margin: 0 0 8px 0;
+}
+
+.flag-list__item {
+	display: flex;
+	margin: 0 8px 0 0;
+	padding: 8px 5px;
+	border-radius: 16px;
+	background-color: #d8d8d8;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&--ellipse {
+		padding: 6px 8px;
+	}
+}
+
+.flag-list__text {
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+}

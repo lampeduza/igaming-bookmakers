@@ -1,0 +1,42 @@
+.partners {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto 118px auto;
+}
+
+.partners__title {
+	font-size: 20px;
+	line-height: 28px;
+
+	margin: 0 0 48px 0;
+}
+
+.partners__group {
+	@include reset-list;
+
+	display: flex;
+	justify-content: center;
+	
+	&:nth-of-type(1) {
+		margin: 0 auto 32px auto;
+	}
+}
+
+.partners__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 280px;
+	min-height: 116px;
+
+	background-color: $white-color;
+	cursor: pointer;
+	border-radius: $radius-sixteen;
+
+	margin: 0 32px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
